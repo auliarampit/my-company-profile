@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Perusahaan Badr</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>Profil Perusahaan Badr</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li class="dropdown-container">
+          <a href="contact.html">Kontak</a>
+          <ul class="dropdown" id="contact-dropdown">
+            <!-- daftar akan diisi oleh javaScript -->
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="articles-container" id="articles-container">
+      <section>
+        <div class="slider" id="image-slider">
+          <div class="slides">
+            <div class="slide active">
+              <figure>
+                <img src="images/team.jpg" alt="Gambar 1">
+                <figcaption>Gambar Tim Perusahaan</figcaption>
+              </figure>
+            </div>
+            <div class="slide">
+              <img src="images/no-image.jpeg" alt="Gambar 2">
+            </div>
+            <div class="slide">
+              <img src="images/team.jpg" alt="Gambar 3">
+            </div>
+          </div>
+          <button class="prev" id="prevBtn">&#10094;</button>
+          <button class="next" id="nextBtn">&#10095;</button>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <article>
+        <header>
+          <h2>Tim Kami</h2>
+          <p>Tim kami siap membantu Anda dengan layanan terbaik. Kami berkomitmen untuk memberikan solusi yang efektif
+            dan
+            efisien untuk kebutuhan Anda. Dengan pengalaman dan pengetahuan yang luas, kami dapat membantu Anda
+            mencapai
+            tujuan dan meningkatkan kualitas hidup Anda.</p>
+          <figure>
+            <img src="images/team.jpg" alt="Tim Perusahaan" class="team-photo">
+            <figcaption>Foto tim kami</figcaption>
+          </figure>
+        </header>
+      </article>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Badr Interactive. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
